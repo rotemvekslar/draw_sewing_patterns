@@ -8,7 +8,7 @@ IMAGE_MARGIN = 50
 IMAGE_CM = 100
 CM_SQUARE_POS = 120
 SMALL_PATTERN_MARGIN = 2
-MEDIUME_PATTERN_MARGIN = 2
+MEDIUME_PATTERN_MARGIN = 3
 LARGE_PATTERN_MARGIN = 5
 
 
@@ -220,7 +220,7 @@ class TShirtSewingPattern(SewingPattern):
         # Fit measurements where needed for T-Shirt
         stomach_scope = 1 / 4 * stomach_scope + LARGE_PATTERN_MARGIN
         neck_key = 1 / 4 * neck_key + SMALL_PATTERN_MARGIN
-        distance_neck_to_shoulder = distance_neck_to_shoulder + neck_key + 3
+        distance_neck_to_shoulder = distance_neck_to_shoulder + neck_key + MEDIUME_PATTERN_MARGIN
 
         # Get measurements for sleeve
         sleeve_length = float(input("Enter the sleeve length:"))
